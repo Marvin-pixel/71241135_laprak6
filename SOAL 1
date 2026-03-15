@@ -1,0 +1,17 @@
+def perkalian(a, b):
+    hasil = 0
+    teks = ""
+
+    for i in range(a):
+        hasil += b
+        teks += str(b)
+        if i < a - 1:
+            teks += " + "
+
+    print(f"{a} x {b} = {teks} = {hasil}")
+
+
+a = int(input("Masukkan angka pertama: "))
+b = int(input("Masukkan angka kedua: "))
+
+perkalian(a, b)
